@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+ 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header{
+  background-color: #6B90A6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 9px 20px;
+}
+
+.logo img{
+  height: 60px;
+}
+
+.navbar ul{
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.navbar a{
+  text-decoration: none;
+  font-family: 'Merriweather', serif;
+  color: #E5AD45;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.3;
+}
+
+.navbar a:hover {
+  opacity: 0.7;
+}
+
+
+.box .btn {
+  display: inline-block;
+  font-family: 'Merriweather', serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #6B90A6;
+  background-color: #E6AF47;
+  padding: 10px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  outline: 2px solid #C49234;
+  outline-offset: -6px; 
+}
+
+.box .btn:hover {
+  background-color: #e0e0e0;
+  transition: 0.3s;
+}
+
+.hero-section {
+  background: url("..//assents/img/fundo\ site.jpg") no-repeat center center / cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 10px;
+  text-align: center;
+   min-height: 100vh;
+}
+
+.hero-image img {
+  max-width: 100%;
+  width: 550px;
+  height: auto;
+  margin-bottom: 30px; 
+}
+
+.hero-text {
+  color: #6B90A6;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
