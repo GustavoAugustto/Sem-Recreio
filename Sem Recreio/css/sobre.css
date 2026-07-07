@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+body {
+    background-image:
+        linear-gradient(rgba(255, 255, 255, .5),
+            rgba(255, 255, 255, .5)),
+        url('../assents/img/fundo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.sobre {
+    padding: 70px 10%;
+}
+
+.sobre h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #E5AD45;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.sobre-container {
+    display: grid;
+    grid-template-columns: minmax(450px, 520px) minmax(350px, 1fr);
+    align-items: center;
+    gap: 80px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.texto {
+    max-width: 520px;
+}
+
+.texto h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #E5AD45;
+    margin-bottom: 20px;
+
+}
+
+.texto p {
+    font-family: "SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #2B3A67;
+}
+
+.urso-principal {
+    justify-self: end;
+}
+
+.urso-principal img {
+    width: 420px;
+    display: block;
+}
+
+.faixa {
+    height: 70px;
+    background: #6B90A6;
+    margin: 50px 0 70px;
+}
+
+.pilares {
+    padding: 40px 8%;
+}
+
+.pilares h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #E5AD45;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    max-width: 1200px;
+    margin: auto;
+    justify-items: center;
+}
+
+.card {
+    display: grid;
+    justify-items: center;
+    position: relative;
+}
+
+.card img {
+    width: 150px;
+    margin-bottom: -20px;
+    z-index: 2;
+}
+
+.card-box {
+    width: 320px;
+    height: 420px;
+    background: #6B90A6;
+    border: 6px solid #E5AD45;
+    border-radius: 80px;
+    padding: 70px 30px 30px;
+    text-align: center;
+}
+
+.card-box h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #E5AD45;
+    margin-bottom: 25px;
+}
+
+.card-box p {
+    font-family: "SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #2B3A67;
+}
+
+.contato {
+    padding: 90px 8%;
+}
+
+.contato h1 {
+    text-align: center;
+    font-size: 4rem;
+    color: #E5AD45;
+    margin-bottom: 60px;
+}
+
+.contato-box {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 8px solid #E5AD45;
+    border-radius: 40px;
+    padding: 60px;
+    overflow: hidden;
+    position: relative;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, .5),
+            rgba(255, 255, 255, .5)),
+        url('../assents/img/fundo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+}
+
+.esquerda,
+.direita {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-family: 'Merriweather';
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2B3A67;
+    margin-bottom: 15px;
+}
+
+input {
+    height: 65px;
+    border: 3px solid #E5AD45;
+    border-radius: 40px;
+    padding: 0 25px;
+    margin-bottom: 35px;
+    background: rgba(255, 255, 255, .75);
+    font-size: 1rem;
+}
+
+textarea {
+    min-height: 350px;
+    border: 3px solid #E5AD45;
+    border-radius: 35px;
+    padding: 25px;
+    resize: none;
+    background: rgba(255, 255, 255, .75);
+    font-size: 1rem;
+}
+
+.btn-enviar {
+    width: 220px;
+    height: 62px;
+    border: none;
+    border-radius: 40px;
+    background: #E5AD45;
+    color: #6B90A6;
+    font-size: 1.8rem;
+    font-family: 'Merriweather';
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, .15);
+    outline: 2px solid #C49234;
+    text-decoration: none;
+    transition: .3s;
+    outline-offset: -6px;
+}
+
+
+.btn-enviar:hover {
+    transform: translateY(-2px);
+}
+
+@media(max-width:900px) {
+    .formulario {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    textarea {
+        min-height: 250px;
+    }
+
+    .btn-enviar {
+        width: 100%;
+    }
+
+}

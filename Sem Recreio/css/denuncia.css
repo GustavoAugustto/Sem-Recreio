@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap');
+
+body {
+
+    background:
+        linear-gradient(rgba(255, 255, 255, .30),
+            rgba(255, 255, 255, .5)),
+        url("../assents/img/fundo.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.banner-denuncia {
+    position: relative;
+    height: 280px;
+    background-image: url("../assents/img/fundo.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(107, 144, 166, .70);
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.banner-content h1{
+    font-family:'Merriweather', serif;
+    color:#E5AD45;
+    font-size:3rem;
+}
+
+.banner-content p {
+    color: #2B3A67;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.denuncia {
+    padding: 70px 20px;
+}
+
+.step {
+    display: none;
+}
+
+.step.active {
+    display: block;
+}
+
+.form-card {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    background: #FFF;
+    border: 8px solid #E5AD45;
+    border-radius: 45px;
+    padding: 55px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .15);
+}
+
+
+
+.form-card h2 {
+    font-family:'Merriweather', serif;
+    color: #2B3A67;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.form-card h3 {
+    font-family:'Merriweather', serif;
+    color: #2B3A67;
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.form-card p {
+    font-family:"SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #2B3A67;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+.form-card label {
+    font-family:"SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    display: block;
+    color: #2B3A67;
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+
+.form-card input[type=text] {
+    font-family:"SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    width: 100%;
+    height: 60px;
+    border: 3px solid #E5AD45;
+    border-radius: 35px;
+    padding: 0 20px;
+    font-size: 1rem;
+    outline: none;
+    transition: .3s;
+}
+
+.form-card input[type=text]:focus {
+    border-color: #2B3A67;
+}
+
+.arquivo {
+    margin-top: 10px;
+    color: #2B3A67;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.radio-group label {
+    font-family:"SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0;
+}
+
+.radio-group input {
+    width: 24px;
+    height: 24px;
+    accent-color: #E5AD45;
+}
+
+
+
+.check {
+    font-family:"SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 35px;
+    font-size: .95rem;
+    font-weight: 500;
+}
+
+.check input {
+    width: 20px;
+    height: 20px;
+    accent-color: #E5AD45;
+}
+
+.buttons {
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.btn-yellow,
+.btn-blue {
+    font-family:'Merriweather', serif;
+    width: 250px;
+    height: 65px;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight:  700;
+    text-decoration: none;
+    transition: .3s;
+    outline-offset: -6px;
+}
+.btn-yellow {
+    background: #E5AD45;
+    color: #6B90A6;
+    outline: 2px solid #C49234;
+}
+
+.btn-yellow:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, .20);
+}
+.btn-blue {
+    background: #6B90A6;
+    color: #E5AD45;
+    outline: 2px solid #4f7890;
+}
+
+.btn-blue:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, .20);
+}
+
+.success-box {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.success-box h1 {
+    font-family:'Merriweather', serif;
+    color: #E5AD45;
+    font-size: 4.5rem;
+    margin-bottom: 30px;
+}
+
+.success-box img {
+    width: 420px;
+    max-width: 100%;
+    margin: 30px auto;
+    display: block;
+}
+
+.success-box h2 {
+    font-family:'Merriweather', serif;
+    color: #2B3A67;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.success-box p {
+    color: #2B3A67;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    max-width: 900px;
+    margin: auto auto 40px;
+}
+
+@media(max-width:900px) {
+    .banner-content h1 {
+        font-size: 2.8rem;
+    }
+    .banner-content p {
+        font-size: 1.4rem;
+    }
+
+    .form-card {
+        padding: 35px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width:600px) {
+
+    .banner-denuncia {
+        height: 220px;
+    }
+
+    .banner-content h1 {
+        font-size: 2rem;
+    }
+
+    .banner-content p {
+        font-size: 1.1rem;
+    }
+
+    .form-card {
+        border-width: 5px;
+        border-radius: 30px;
+        padding: 25px;
+
+    }
+
+    .form-card h2 {
+        font-size: 2rem;
+    }
+
+    .form-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .form-card label {
+        font-size: 1.1rem;
+    }
+
+    .btn-yellow,
+    .btn-blue {
+        width: 220px;
+        font-size: 1.2rem;
+
+    }
+
+    .success-box h1 {
+        font-size: 2.6rem;
+    }
+
+}
