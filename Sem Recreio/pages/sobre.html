@@ -1,59 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="../css/paginainicial.css">
-     <link rel="stylesheet" href="../css/sobre.css">
-
     <title>Sem Recreio - Sobre nós</title>
+    <link rel="stylesheet" href="../css/paginainicial.css">
+    <link rel="stylesheet" href="../css/sobre.css">
 </head>
 
 <body>
     <header class="header">
         <div class="logo">
-            <img src="../assents/img/Logo.png" alt="Sem recreio">
+            <img class="img-logo" src="../assents/img/Logo.png" alt="Sem Recreio">
         </div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="/Inicio.html">Início</a></li>
-                <li><a href="./sobre.html">Sobre</a></li>
-                <li><a href="#">O quarto</a></li>
-                <li><a href="./ajuda.html">O que você pode fazer</a></li>
-            </ul>
-        </nav>
-        <div class="box">
-            <a href="./denuncia.html" class="btn">DENUNCIE AQUI</a>
+
+        <button class="menu-hamburguer" id="menuHamburguer" aria-label="Abrir menu" aria-expanded="false"
+            aria-controls="menuMobile">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="menu-mobile" id="menuMobile">
+            <nav class="navbar" aria-label="Navegação principal">
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="./sobre.html">Sobre</a></li>
+                    <li><a href="#">O quarto</a></li>
+                    <li><a href="./ajuda.html">O que você pode fazer</a></li>
+                </ul>
+            </nav>
+            <div class="box">
+                <a href="./denuncia.html" class="btn">DENUNCIE AQUI</a>
+            </div>
         </div>
     </header>
+
     <main class="sobre">
         <h1>Sobre Nós</h1>
         <div class="sobre-container">
             <div class="texto">
-                <h2>Como surgiu “Sem Recreio”?</h2>
+                <h2>Como surgiu "Sem Recreio"?</h2>
                 <p>
                     O Sem Recreio não surgiu de um sonho, mas da urgência de transformar a apatia em indignação. Vimos
                     quantas crianças têm suas infâncias roubadas pelo trabalho pesado e como a sociedade escolhe desviar
                     o olhar, fingindo não ver o inaceitável. Assim nasceu nossa missão: ser o espelho desconfortável que
                     força o confronto com essa realidade que destrói futuros. Acreditamos que fechar os olhos é ser
-                    cúmplice — e queremos tornar o silêncio impossível e a denúncia inevitável
+                    cúmplice — e queremos tornar o silêncio impossível e a denúncia inevitável.
                 </p>
             </div>
-
             <div class="urso-principal">
-                <img src="../assents/img/urso-sobre.png">
+                <img src="../assents/img/urso-sobre.png" alt="Urso de pelúcia">
             </div>
-
         </div>
     </main>
 
     <section class="faixa"></section>
+
     <section class="pilares">
         <h1>Nossos Pilares</h1>
         <div class="cards">
             <div class="card">
-                <img src="../assents/img/urso-pequeno.png">
+                <img src="../assents/img/urso-pequeno.png" alt="">
                 <div class="card-box">
                     <h3>Missão</h3>
                     <p>
@@ -63,35 +72,30 @@
                     </p>
                 </div>
             </div>
-
-
             <div class="card">
-                <img src="../assents/img/urso-pequeno.png">
+                <img src="../assents/img/urso-pequeno.png" alt="">
                 <div class="card-box">
                     <h3>Visão</h3>
                     <p>
                         Ser a principal plataforma de choque e mobilização nacional contra o trabalho infantil, usando a
-                        tecnologia como uma ferramenta para iluminar o que a sociedade mantemr nas sombras.
+                        tecnologia como uma ferramenta para iluminar o que a sociedade mantém nas sombras.
                     </p>
                 </div>
             </div>
-
             <div class="card">
-                <img src="../assents/img/urso-pequeno.png">
+                <img src="../assents/img/urso-pequeno.png" alt="">
                 <div class="card-box">
                     <h3>Valores</h3>
                     <p>
-                        Indignação Ativa,
-                        Responsabilidade, Proteção, Transparência, Conscientização,
-                        Sustentabilidade Social,
-                        Compaixão.
+                        Indignação Ativa, Responsabilidade, Proteção, Transparência, Conscientização,
+                        Sustentabilidade Social, Compaixão.
                     </p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="contato">
 
+    <section class="contato">
         <h1>Entre em Contato</h1>
         <div class="contato-box">
             <form class="formulario" id="contatoForm">
@@ -100,72 +104,52 @@
                     <input type="text" id="nome" required>
                     <label for="email">E-mail</label>
                     <input type="email" id="email" required>
-                    <button type="submit" class="btn-enviar">Enviar</button>
                 </div>
                 <div class="direita">
                     <label for="assunto">Assunto</label>
                     <textarea id="assunto" required></textarea>
                 </div>
+                <button type="submit" class="btn-enviar">Enviar</button>
             </form>
         </div>
     </section>
-     <div class="footer-container">
 
-                <div class="footer-logo">
-
-                    <img src="../assents/img/Logo.png" alt="Logo">
-
-                    <p>
-                        Promovendo e apoiando a luta contra o trabalho infantil
-                    </p>
-
-                </div>
-
-                <div class="footer-links">
-
-                    <h3>Links Úteis</h3>
-
-                    <ul>
-                        <li><a href="./PAGINA INICIAL.html">Inicio</a></li>
-                        <li><a href="./sobre.html">Sobre nós</a></li>
-                        <li><a href="#">O quarto</a></li>
-                        <li><a href="./ajuda.html">como ajudar?</a></li>
-                    </ul>
-
-                </div>
-
-                <div class="footer-links">
-
-                    <h3>Suporte</h3>
-
-                    <ul>
-                        <li><a href="./faq.html">FAQ</a></li>
-                        <li><a href="./doacao.html">Doações</a></li>
-                        <li><a href="#">Termos de Uso</a></li>
-                        <li><a href="#">Politicas e Privacidade</a></li>
-                        <li><a href="#">Fale Conosco</a></li>
-                    </ul>
-
-                </div>
-
-                <div class="footer-links">
-
-                    <h3>Contato</h3>
-
-                    <ul>
-                        <li><a href="#">@Sem_recreio</a></li>
-                        <li>
-                            <a href="mailto:semrecreio@gmail.com">
-                                semrecreio@gmail.com
-                            </a>
-                        </li>
-                    </ul>
-
-                </div>
-
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../assents/img/Logo.png" alt="Logo">
+                <p>Promovendo e apoiando a luta contra o trabalho infantil</p>
             </div>
+            <div class="footer-links">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="./sobre.html">Sobre nós</a></li>
+                    <li><a href="#">O quarto</a></li>
+                    <li><a href="./ajuda.html">Como ajudar?</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Suporte</h3>
+                <ul>
+                    <li><a href="./faq.html">FAQ</a></li>
+                    <li><a href="./doacao.html">Doações</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Políticas e Privacidade</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Contato</h3>
+                <ul>
+                    <li><a href="#">@Sem_recreio</a></li>
+                    <li><a href="mailto:semrecreio@gmail.com">semrecreio@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
-        </footer>
+    <script src="../js/menu.js"></script>
     <script src="../js/sobre.js"></script>
 </body>
 

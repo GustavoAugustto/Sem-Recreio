@@ -1,100 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sem Recreio | Denúncia</title>
     <link rel="stylesheet" href="../css/paginainicial.css">
     <link rel="stylesheet" href="../css/denuncia.css">
-    <title>Document</title>
 </head>
 
 <body>
     <header class="header">
         <div class="logo">
-            <img src="../assents/img/Logo.png" alt="Sem recreio">
+            <img class="img-logo" src="../assents/img/Logo.png" alt="Sem Recreio">
         </div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="/Inicio.html">Início</a></li>
-                <li><a href="./sobre.html">Sobre</a></li>
-                <li><a href="#">O quarto</a></li>
-                <li><a href="./ajuda.html">O que você pode fazer</a></li>
-            </ul>
-        </nav>
-        <div class="box">
-            <a href="./denuncia.html" class="btn">DENUNCIE AQUI</a>
+
+        <button class="menu-hamburguer" id="menuHamburguer" aria-label="Abrir menu" aria-expanded="false"
+            aria-controls="menuMobile">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="menu-mobile" id="menuMobile">
+            <nav class="navbar" aria-label="Navegação principal">
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="./sobre.html">Sobre</a></li>
+                    <li><a href="#">O quarto</a></li>
+                    <li><a href="./ajuda.html">O que você pode fazer</a></li>
+                </ul>
+            </nav>
+            <div class="box">
+                <a href="./denuncia.html" class="btn">DENUNCIE AQUI</a>
+            </div>
         </div>
     </header>
+
     <section class="banner-denuncia">
         <div class="banner-overlay"></div>
         <div class="banner-content">
             <h1>Denúncia de exploração infantil.</h1>
-            <p>
-                Quebre o ciclo.
-                Ajude-nos a devolver o recreio.
-            </p>
+            <p>Quebre o ciclo. Ajude-nos a devolver o recreio.</p>
         </div>
     </section>
+
     <main class="denuncia">
         <section class="step active" id="step1">
             <div class="form-card">
-                <h2>
-                    Reporte
-                </h2>
+                <h2>Reporte</h2>
                 <p>
                     O seu relato é fundamental para protegermos infâncias em risco. Forneça o maior número de dados
-                    sobre onde a criança está e o que ela está sendo submetida a fazer. Agradeçemos sua ajuda!
+                    sobre onde a criança está e o que ela está sendo submetida a fazer. Agradecemos sua ajuda!
                 </p>
-                <h3>
-                    Processo da denúncia
-                </h3>
+                <h3>Processo da denúncia</h3>
                 <p>
                     Nossa equipe analisa o relato e aciona imediatamente os órgãos oficiais competentes, como o Conselho
                     Tutelar, ONGs e redes de proteção locais, para checar a situação. Todo o processo é acompanhado para
-                    garantir que a criança seja protegida e ajudada o mais rapido possivel. Seus dados de contato são
+                    garantir que a criança seja protegida e ajudada o mais rápido possível. Seus dados de contato são
                     mantidos em absoluto sigilo e serão usados apenas se precisarmos confirmar algum detalhe.
                 </p>
-                <label>
-                    Nome Completo
-                </label>
-                <input type="text">
-                <label>
-                    CPF (Opcional)
-                </label>
-                <input type="text">
-                <label>
-                    Endereço
-                </label>
-                <input type="text">
-                <label>
-                    Ponto de referência
-                </label>
-                <input type="text">
-                <label>
-                    Fotos da criança
-                    ou da situação da mesma.
-                </label>
-                <input type="file" class="arquivo">
+                <label for="nomeDenunciante">Nome Completo</label>
+                <input type="text" id="nomeDenunciante">
+                <label for="cpfDenunciante">CPF (Opcional)</label>
+                <input type="text" id="cpfDenunciante">
+                <label for="endereco">Endereço</label>
+                <input type="text" id="endereco">
+                <label for="referencia">Ponto de referência</label>
+                <input type="text" id="referencia">
+                <label for="fotos">Fotos da criança ou da situação da mesma.</label>
+                <input type="file" id="fotos" class="arquivo">
             </div>
             <div class="buttons">
-                <button id="next1" class="btn-yellow">
-                    Avançar
-                </button>
-                <button class="btn-blue voltar">
-                    Voltar
-                </button>
+                <button id="next1" class="btn-yellow">Avançar</button>
+                <button class="btn-blue voltar">Voltar</button>
             </div>
         </section>
+
         <section class="step" id="step2">
             <div class="form-card">
-                <label>
-                    A criança esta sozinha? Tem familiares na mesma situação?
-                </label>
-                <input type="text">
-                <label>
-                    Informe a possivel faixa etária da criança.
-                </label>
+                <label for="familiares">A criança está sozinha? Tem familiares na mesma situação?</label>
+                <input type="text" id="familiares">
+                <label>Informe a possível faixa etária da criança.</label>
                 <div class="radio-group">
                     <label>
                         <input type="radio" name="idade">
@@ -109,9 +96,7 @@
                         12 a 15 anos
                     </label>
                 </div>
-                <label>
-                    Existe a possibilidade de outras crianças exploradas dentro do local?
-                </label>
+                <label>Existe a possibilidade de outras crianças exploradas dentro do local?</label>
                 <div class="radio-group">
                     <label>
                         <input type="radio" name="criancas">
@@ -126,14 +111,10 @@
                         Talvez
                     </label>
                 </div>
-                <label>
-                    Que atividade está realizando a criança?
-                </label>
-                <input type="text">
-                <label>
-                    Tem algum ente especifo coordenado dita atividade?
-                </label>
-                <input type="text">
+                <label for="atividade">Que atividade está realizando a criança?</label>
+                <input type="text" id="atividade">
+                <label for="coordenador">Tem algum ente específico coordenando dita atividade?</label>
+                <input type="text" id="coordenador">
                 <label class="check">
                     <input type="checkbox">
                     Declaro que todas as informações prestadas neste formulário são verdadeiras e correspondem à
@@ -141,97 +122,64 @@
                 </label>
             </div>
             <div class="buttons">
-                <button id="send" class="btn-yellow">
-                    Enviar
-                </button>
-                <button id="back2" class="btn-blue">
-                    Voltar
-                </button>
+                <button id="send" class="btn-yellow">Enviar</button>
+                <button id="back2" class="btn-blue">Voltar</button>
             </div>
         </section>
+
         <section class="step" id="success">
             <div class="success-box">
-                <h1>
-                    Obrigado por Denunciar!
-                </h1>
+                <h1>Obrigado por Denunciar!</h1>
                 <img src="../assents/img/ursodireita.png" alt="Urso">
-                <h2>
-                    Sua denúncia foi encaminhada
-                    com sucesso!
-                </h2>
+                <h2>Sua denúncia foi encaminhada com sucesso!</h2>
                 <p>
                     Sua denúncia foi registrada e será encaminhada imediatamente aos órgãos de proteção competentes,
                     como o Conselho Tutelar e a rede de fiscalização, para averiguação da situação. As autoridades
-                    responsáveis poderão entrar em com voce.</br> </p>
-
-                <p> Cada denúncia interrompe um ciclo de exploração e ajuda a devolver o direito de ser criança.</br>
+                    responsáveis poderão entrar em contato com você.
                 </p>
-
-                <p> A equipe Sem Recreio agradece por você não desviar o olhar.</br> </p>
-                </p>
-                <button id="inicio" class="btn-yellow">
-                    Voltar ao início
-                </button>
+                <p>Cada denúncia interrompe um ciclo de exploração e ajuda a devolver o direito de ser criança.</p>
+                <p>A equipe Sem Recreio agradece por você não desviar o olhar.</p>
+                <button id="inicio" class="btn-yellow">Voltar ao início</button>
             </div>
         </section>
     </main>
-    <div class="footer-container">
 
-        <div class="footer-logo">
-
-            <img src="../assents/img/Logo.png" alt="Logo">
-
-            <p>
-                Promovendo e apoiando a luta contra o trabalho infantil
-            </p>
-
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../assents/img/Logo.png" alt="Logo">
+                <p>Promovendo e apoiando a luta contra o trabalho infantil</p>
+            </div>
+            <div class="footer-links">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="./sobre.html">Sobre nós</a></li>
+                    <li><a href="#">O quarto</a></li>
+                    <li><a href="./ajuda.html">Como ajudar?</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Suporte</h3>
+                <ul>
+                    <li><a href="./faq.html">FAQ</a></li>
+                    <li><a href="./doacao.html">Doações</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Políticas e Privacidade</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Contato</h3>
+                <ul>
+                    <li><a href="#">@Sem_recreio</a></li>
+                    <li><a href="mailto:semrecreio@gmail.com">semrecreio@gmail.com</a></li>
+                </ul>
+            </div>
         </div>
-
-        <div class="footer-links">
-
-            <h3>Links Úteis</h3>
-
-            <ul>
-                <li><a href="./PAGINA INICIAL.html">Inicio</a></li>
-                <li><a href="./sobre.html">Sobre nós</a></li>
-                <li><a href="#">O quarto</a></li>
-                <li><a href="./ajuda.html">como ajudar?</a></li>
-            </ul>
-
-        </div>
-
-        <div class="footer-links">
-
-            <h3>Suporte</h3>
-
-            <ul>
-                <li><a href="./faq.html">FAQ</a></li>
-                <li><a href="./doacao.html">Doações</a></li>
-                <li><a href="#">Termos de Uso</a></li>
-                <li><a href="#">Politicas e Privacidade</a></li>
-                <li><a href="#">Fale Conosco</a></li>
-            </ul>
-
-        </div>
-
-        <div class="footer-links">
-
-            <h3>Contato</h3>
-
-            <ul>
-                <li><a href="#">@Sem_recreio</a></li>
-                <li>
-                    <a href="mailto:semrecreio@gmail.com">
-                        semrecreio@gmail.com
-                    </a>
-                </li>
-            </ul>
-
-        </div>
-
-    </div>
-
     </footer>
+
+    <script src="../js/menu.js"></script>
     <script src="../js/denuncia.js"></script>
 </body>
 

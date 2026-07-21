@@ -12,20 +12,31 @@
 <body>
     <header class="header">
         <div class="logo">
-            <img src="../assents/img/Logo.png" alt="Sem recreio">
+            <img class="img-logo" src="../assents/img/Logo.png" alt="Sem Recreio">
         </div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="/Inicio.html">Início</a></li>
-                <li><a href="./sobre.html">Sobre</a></li>
-                <li><a href="#">O quarto</a></li>
-                <li><a href="./ajuda.html">O que você pode fazer</a></li>
-            </ul>
-        </nav>
-        <div class="box">
-            <a href="./denuncia.html" class="btn">DENUNCIE AQUI</a>
+
+        <button class="menu-hamburguer" id="menuHamburguer" aria-label="Abrir menu" aria-expanded="false"
+            aria-controls="menuMobile">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="menu-mobile" id="menuMobile">
+            <nav class="navbar" aria-label="Navegação principal">
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="./sobre.html">Sobre</a></li>
+                    <li><a href="#">O quarto</a></li>
+                    <li><a href="./ajuda.html">O que você pode fazer</a></li>
+                </ul>
+            </nav>
+            <div class="box">
+                <a href="./denuncia.html" class="btn">DENUNCIE AQUI</a>
+            </div>
         </div>
     </header>
+
     <section class="banner-doacao">
         <div class="banner-overlay"></div>
         <div class="banner-content">
@@ -33,8 +44,8 @@
             <p>O recreio é um direito de toda criança.</p>
         </div>
     </section>
-    <main class="doacao">
 
+    <main class="doacao">
         <section id="step1" class="step active">
             <div class="form-card">
                 <h2>Doação</h2>
@@ -52,114 +63,80 @@
                     no momento da doação (nome e e-mail) são mantidos em estrita confidencialidade. Eles são utilizados
                     apenas para a gestão das contribuições e não são, sob hipótese alguma, compartilhados com terceiros.
                 </p>
-                <label>Nome Completo</label>
+                <label for="nome">Nome Completo</label>
                 <input type="text" id="nome" placeholder="">
-                <label>E-mail</label>
+                <label for="email">E-mail</label>
                 <input type="email" id="email" placeholder="">
-                <label>CPF (Opcional)</label>
+                <label for="cpf">CPF (Opcional)</label>
                 <input type="text" id="cpf" placeholder="">
                 <div class="pix">
-                    <a href="#" id="copiarPix">
-                        Copiar chave PIX
-                    </a>
+                    <a href="#" id="copiarPix">Copiar chave PIX</a>
                 </div>
-
-                <label>Comprovante de pagamento</label>
-                <input type="file" class="arquivo" accept="image/*,.pdf">
+                <label for="comprovante">Comprovante de pagamento</label>
+                <input type="file" id="comprovante" class="arquivo" accept="image/*,.pdf">
                 <div class="buttons">
-                    <button id="avancar" class="btn-yellow">
-                        Avançar
-                    </button>
-                    <button type="button" class="btn-blue voltar">
-                        Voltar
-                    </button>
+                    <button id="avancar" class="btn-yellow">Avançar</button>
+                    <button type="button" class="btn-blue voltar">Voltar</button>
                 </div>
             </div>
         </section>
 
         <section id="success" class="step">
             <div class="success-box">
-                <h1>
-                    Obrigado por Doar!
-                </h1>
+                <h1>Obrigado por Doar!</h1>
                 <img src="../assents/img/urso-doacao.png" alt="Urso">
-                <h2>
-                    Sua doação foi processada com sucesso!
-                </h2>
+                <h2>Sua doação foi processada com sucesso!</h2>
                 <p>
-                    Obrigado por apoiar esta causa.
-                    Sua contribuição vai muito além do valor financeiro:
+                    Obrigado por apoiar esta causa. Sua contribuição vai muito além do valor financeiro:
                     ela fortalece projetos sociais, amplia ações de conscientização
                     e ajuda milhares de crianças a recuperarem o direito à infância.
                     <br><br>
                     Você faz parte do movimento que rompe o ciclo da exploração.
                     <br><br>
-                    A equipe Sem Recreio agradece pela confiança
-                    e pelo compromisso com o futuro de milhares de crianças.
+                    A equipe Sem Recreio agradece pela confiança e pelo compromisso com o futuro de milhares de
+                    crianças.
                 </p>
-                <button id="inicio" class="btn-yellow">
-                    Voltar ao início
-                </button>
+                <button id="inicio" class="btn-yellow">Voltar ao início</button>
             </div>
         </section>
     </main>
-     <div class="footer-container">
 
-                <div class="footer-logo">
-
-                    <img src="../assents/img/Logo.png" alt="Logo">
-
-                    <p>
-                        Promovendo e apoiando a luta contra o trabalho infantil
-                    </p>
-
-                </div>
-
-                <div class="footer-links">
-
-                    <h3>Links Úteis</h3>
-
-                    <ul>
-                        <li><a href="./PAGINA INICIAL.html">Inicio</a></li>
-                        <li><a href="./sobre.html">Sobre nós</a></li>
-                        <li><a href="#">O quarto</a></li>
-                        <li><a href="./ajuda.html">como ajudar?</a></li>
-                    </ul>
-
-                </div>
-
-                <div class="footer-links">
-
-                    <h3>Suporte</h3>
-
-                    <ul>
-                        <li><a href="./faq.html">FAQ</a></li>
-                        <li><a href="./doacao.html">Doações</a></li>
-                        <li><a href="#">Termos de Uso</a></li>
-                        <li><a href="#">Politicas e Privacidade</a></li>
-                        <li><a href="#">Fale Conosco</a></li>
-                    </ul>
-
-                </div>
-
-                <div class="footer-links">
-
-                    <h3>Contato</h3>
-
-                    <ul>
-                        <li><a href="#">@Sem_recreio</a></li>
-                        <li>
-                            <a href="mailto:semrecreio@gmail.com">
-                                semrecreio@gmail.com
-                            </a>
-                        </li>
-                    </ul>
-
-                </div>
-
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../assents/img/Logo.png" alt="Logo">
+                <p>Promovendo e apoiando a luta contra o trabalho infantil</p>
             </div>
+            <div class="footer-links">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="./sobre.html">Sobre nós</a></li>
+                    <li><a href="#">O quarto</a></li>
+                    <li><a href="./ajuda.html">Como ajudar?</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Suporte</h3>
+                <ul>
+                    <li><a href="./faq.html">FAQ</a></li>
+                    <li><a href="./doacao.html">Doações</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Políticas e Privacidade</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Contato</h3>
+                <ul>
+                    <li><a href="#">@Sem_recreio</a></li>
+                    <li><a href="mailto:semrecreio@gmail.com">semrecreio@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
-        </footer>
+    <script src="../js/menu.js"></script>
     <script src="../js/doacao.js"></script>
 </body>
 

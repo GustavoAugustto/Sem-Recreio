@@ -1,402 +1,325 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
 
 body {
-    background-image:
-        linear-gradient(rgba(255, 255, 255, .55),
-            rgba(255, 255, 255, .55)),
-        url("../assents/img/fundo.png");
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: repeat;
-    background-attachment: fixed;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, .55), rgba(255, 255, 255, .55)),
+    url("../assents/img/fundo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  background-attachment: fixed;
 }
 
 .hero {
-    padding: 80px 8% 60px;
-    text-align: center;
-    background: rgba(107, 144, 166, .75);
+  padding: 80px 8% 60px;
+  text-align: center;
+  background: rgba(107, 144, 166, .75);
 }
 
 .hero h1 {
-    font-family: 'Merriweather', serif;
-    font-size: 4.6rem;
-    color: #E5AD45;
-    margin-bottom: 20px;
+  font-family: 'Merriweather', serif;
+  font-size: 4.6rem;
+  color: #E5AD45;
+  margin-bottom: 20px;
 }
 
 .hero p {
-    font-family: "SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    font-size: 1.7rem;
-    color: #2B3A67;
-    line-height: 1.5;
+  font-family: "SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 1.7rem;
+  color: #2B3A67;
+  line-height: 1.5;
 }
-
 
 .acoes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 45px;
-    max-width: 1300px;
-    margin: 80px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 45px;
+  max-width: 1300px;
+  margin: 80px auto;
 }
 
 .card {
-    display: flex;
-    justify-content: center;
+  position: relative;
+  width: 380px;
+  height: 420px;
+  border: 4px solid #E5AD45;
+  border-radius: 35px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  text-decoration: none;
+  transition: .35s;
 }
 
-.card a {
-    text-decoration: none;
-}
-
-.card {
-    position: relative;
-    width: 380px;
-    height: 420px;
-    border: 4px solid #E5AD45;
-    border-radius: 35px;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: flex-end;
-    text-decoration: none;
-    transition: .35s;
-}
-
-.imagem h3 {
-    position: absolute;
-    top: 28px;
-    left: 20px;
-    right: 20px;
-    z-index: 2;
-    text-align: center;
-    color: #E5AD45;
-    font-family: 'Merriweather', serif;
-    font-size: 2.2rem;
-    line-height: 1.15;
-    font-weight: 700;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, .4);
+.card img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
 
 .card::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, .30);
-    transition: .35s;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, .30);
+  transition: .35s;
+  z-index: 1;
 }
 
 .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 18px 35px rgba(0, 0, 0, .28);
+  transform: scale(1.05);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, .28);
 }
 
 .card:hover::before {
-    background: rgba(0, 0, 0, .15);
+  background: rgba(0, 0, 0, .15);
 }
 
 .card h3 {
-    position: absolute;
-    top: 28px;
-    left: 25px;
-    right: 25px;
-    text-align: center;
-    font-family: 'Merriweather';
-    font-size: 2rem;
-    color: #E5AD45;
-    z-index: 2;
+  position: absolute;
+  top: 28px;
+  left: 25px;
+  right: 25px;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
+  color: #E5AD45;
+  z-index: 2;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, .4);
 }
 
 .descricao {
-    width: 100%;
-    background: #6B90A6;
-    padding: 28px 22px;
-    z-index: 2;
+  width: 100%;
+  background: #6B90A6;
+  padding: 28px 22px;
+  z-index: 2;
 }
 
 .descricao p {
-    font-family: "SF Pro";
-    font-size: 1.3rem;
-    color: #2B3A67;
-    text-align: center;
-    line-height: 1.5;
+  font-family: "SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 1.3rem;
+  color: #2B3A67;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.secao-final {
+  position: relative;
 }
 
 .cta {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    gap: 90px;
-    padding: 80px 0 0;
-    overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 80px 5% 0;
+  position: relative;
 }
 
 .urso {
-    flex: 0 0 42%;
-    display: flex;
-    align-items: flex-end;
-    margin-left: -130px;
-    margin-bottom: -6px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  pointer-events: none;
 }
 
 .urso img {
-    width: 760px;
-    display: block;
+  width: 500px;
+  max-width: 38vw;
+  display: block;
 }
 
 .texto-cta {
-    flex: 1;
-    max-width: 650px;
-    margin-right: 8%;
-    padding-left: 30px;
+  position: relative;
+  z-index: 2;
+  flex: 1;
+  min-width: 0;
+  max-width: 620px;
+  margin-right: 0;
+  margin-left: min(480px, 36vw);
 }
 
 .texto-cta h2 {
-    font-family: 'Merriweather', serif;
-    font-size: 4rem;
-    font-weight: 700;
-    color: #E5AD45;
-    line-height: 1.15;
-    margin-bottom: 35px;
+  font-family: 'Merriweather', serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #E5AD45;
+  line-height: 1.15;
+  margin-bottom: 35px;
 }
 
 .texto-cta p {
-    font-family: "SF Pro", -apple-system, BlinkMacSystemFont,
-        "Segoe UI", Roboto, sans-serif;
-    font-size: 1.35rem;
-    color: #2B3A67;
-    line-height: 1.7;
-    margin-bottom: 22px;
+  font-family: "SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 1.35rem;
+  color: #2B3A67;
+  line-height: 1.7;
+  margin-bottom: 22px;
 }
 
 .botoes {
-    display: flex;
-    gap: 30px;
-    margin-bottom: 45px;
+  display: flex;
+  gap: 30px;
+  margin-bottom: 45px;
 }
 
 .btn {
-    width: 230px;
-    height: 65px;
-    display: flex;
+  width: 230px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 40px;
+  background: #E5AD45;
+  color: #6B90A6;
+  font-family: 'Merriweather', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  outline: 2px solid #C49234;
+  outline-offset: -6px;
+  transition: .35s;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .18);
+}
+
+.btn:hover,
+.btn:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 25px rgba(0, 0, 0, .25);
+}
+
+@media (max-width: 1100px) {
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero p {
+    font-size: 1.4rem;
+  }
+
+  .cta {
+    text-align: center;
+  }
+
+  .urso img {
+    width: 300px;
+  }
+
+  .texto-cta {
+    margin: auto;
+    padding-left: 300px;
+  }
+
+  .botoes {
     justify-content: center;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
     align-items: center;
-    text-decoration: none;
-    border-radius: 40px;
-    background: #E5AD45;
-    color: #6B90A6;
-    font-family: 'Merriweather', serif;
-    font-size: 1.5rem;
-    font-weight: 700;
-    outline: 2px solid #C49234;
-    outline-offset: -6px;
-    transition: .35s;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, .18);
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    text-align: center;
+  }
+
+  .card img {
+    position: static;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .card::before {
+    display: none;
+  }
+
+  .card h3 {
+    position: static;
+    width: 100%;
+    margin: 18px 0 0;
+    text-shadow: none;
+  }
+
+  .descricao {
+    background: #6B90A6 ;
+    padding: 10px 20px 24px;
+  }
 }
 
-.btn:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 16px 25px rgba(0, 0, 0, .25);
+@media (max-width: 700px) {
+  .hero {
+    padding: 60px 6%;
+  }
+
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero p {
+    font-size: 1.15rem;
+  }
+
+  .descricao p {
+    font-size: 1.1rem;
+  }
+
+  .cta {
+    padding: 60px 6%;
+  }
+
+  .urso img {
+    width: 170px;
+  }
+
+  .texto-cta {
+    padding-left: 170px;
+    text-align: left;
+  }
+
+  .texto-cta h2 {
+    font-size: 1.9rem;
+  }
+
+  .texto-cta p {
+    font-size: 1rem;
+  }
+
+  .botoes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 260px;
+  }
 }
 
-.denuncia {
-    background-image: url("../assents/img/card-denuncie.png");
-}
-
-.identificar {
-    background-image: url("../assents/img/card-identificar.jpg");
-}
-
-.conscientizar {
-    background-image: url("../assents/img/card-concientizar.jpg");
-}
-
-.doar {
-    background-image: url("../assents/img/card-apoie.png");
-}
-
-.educar {
-    background-image: url("../assents/img/card-eduque.png");
-}
-
-@media(max-width:1300px) {
-    .acoes {
-        grid-template-columns: repeat(2, 380px);
-    }
-
-    .card:nth-child(4) {
-        grid-column: auto;
-        justify-self: center;
-    }
-
-    .card:nth-child(5) {
-        grid-column: 1 / span 2;
-        justify-self: center;
-    }
-}
-
-@media(max-width:1100px) {
-    .hero h1 {
-        font-size: 3.5rem;
-    }
-
-    .hero p {
-        font-size: 1.4rem;
-    }
-
-    .cta {
-        grid-template-columns: 1fr;
-        gap: 50px;
-        text-align: center;
-    }
-
-    .urso {
-        margin-left: 0;
-        display: flex;
-        justify-content: center;
-    }
-
-    .urso img {
-        width: 500px;
-    }
-
-    .texto-cta {
-        margin: auto;
-    }
-
-    .botoes {
-        justify-content: center;
-    }
-
-}
-
-@media(max-width:900px) {
-
-    .acoes {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .card {
-        justify-content: center;
-    }
-
-    .card:nth-child(5) {
-        grid-column: auto;
-    }
-
-}
-
-@media(max-width:700px) {
-
-    .hero {
-
-
-        padding: 60px 6%;
-
-    }
-
-    .hero h1 {
-
-        font-size: 2.8rem;
-
-    }
-
-    .hero p {
-
-        font-size: 1.15rem;
-
-    }
-
-    .imagem {
-
-        width: 330px;
-
-        height: 390px;
-
-    }
-
-    .imagem h3 {
-
-        font-size: 1.8rem;
-
-    }
-
-    .descricao p {
-
-        font-size: 1.15rem;
-
-    }
-
-    .urso img {
-
-        width: 360px;
-
-    }
-
-    .texto-cta h2 {
-
-        font-size: 2.6rem;
-
-    }
-
-    .texto-cta p {
-
-        font-size: 1.1rem;
-
-    }
-
-    .botoes {
-
-        flex-direction: column;
-
-        align-items: center;
-
-    }
-
-    .btn {
-
-        width: 260px;
-
-    }
-
-}
-
-@media(max-width:450px) {
-
-    .imagem {
-
-        width: 290px;
-
-        height: 360px;
-
-    }
-
-    .hero h1 {
-
-        font-size: 2.2rem;
-
-    }
-
-    .hero p {
-
-        font-size: 1rem;
-
-    }
-
-    .texto-cta h2 {
-
-        font-size: 2rem;
-
-    }
-
-    .urso img {
-
-        width: 300px;
-
-    }
-
+@media (max-width: 450px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .urso img {
+    width: 130px;
+  }
+
+  .texto-cta {
+    padding-left: 130px;
+  }
+
+  .texto-cta h2 {
+    font-size: 1.6rem;
+  }
 }

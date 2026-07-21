@@ -1,298 +1,291 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap');
 
 body {
-
-    background:
-        linear-gradient(rgba(255,255,255,0.6),
-            rgba(255,255,255,0.6)),
-        url("../assents/img/fundo.png");
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+    url("../assents/img/fundo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .banner-doacao {
-    position: relative;
-    height: 280px;
-    background-image: url("../assents/img/fundo.png");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+  position: relative;
+  height: 280px;
+  background-image: url("../assents/img/fundo.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .banner-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(107, 144, 166, .70);
+  position: absolute;
+  inset: 0;
+  background: rgba(107, 144, 166, .70);
 }
 
 .banner-content {
-    position: relative;
-    z-index: 2;
-    text-align: center;
+  position: relative;
+  z-index: 2;
+  text-align: center;
 }
 
 .banner-content h1 {
-    font-family: 'Merriweather', serif;
-    color: #E5AD45;
-    font-size: 4rem;
-    margin-bottom: 10px;
+  font-family: 'Merriweather', serif;
+  color: #E5AD45;
+  font-size: 4rem;
+  margin-bottom: 10px;
 }
 
 .banner-content p {
-    font-family: "SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    color: #2B3A67;
-    font-size: 2rem;
-    font-weight: 600;
+  font-family: "SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #2B3A67;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .doacao {
-    padding: 70px 20px;
+  padding: 70px 20px;
 }
 
 .step {
-    display: none;
+  display: none;
 }
 
 .step.active {
-    display: block;
+  display: block;
 }
 
 .form-card {
-    width: 100%;
-    max-width: 900px;
-    margin: auto;
-    background: #FFF;
-    border: 8px solid #E5AD45;
-    border-radius: 45px;
-    padding: 55px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, .18);
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  background: #FFF;
+  border: 8px solid #E5AD45;
+  border-radius: 45px;
+  padding: 55px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, .18);
 }
 
 .form-card h2,
 .form-card h3 {
-    font-family: 'Merriweather', serif;
-    color: #2B3A67;
+  font-family: 'Merriweather', serif;
+  color: #2B3A67;
 }
 
 .form-card h2 {
-    font-size: 2.4rem;
-    margin-bottom: 20px;
+  font-size: 2.4rem;
+  margin-bottom: 20px;
 }
 
 .form-card h3 {
-    font-size: 2rem;
-    margin-top: 30px;
-    margin-bottom: 15px;
+  font-size: 2rem;
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
 
 .form-card p {
-
-    font-family: "SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    color: #2B3A67;
-    line-height: 1.6;
-    margin-bottom: 20px;
+  font-family: "SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #2B3A67;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
 .form-card label {
-    display: block;
-    font-family: "SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    font-size: 1.35rem;
-    font-weight: 700;
-    color: #2B3A67;
-    margin-top: 25px;
-    margin-bottom: 10px;
+  display: block;
+  font-family: "SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #2B3A67;
+  margin-top: 25px;
+  margin-bottom: 10px;
 }
 
 .form-card input[type=text],
 .form-card input[type=email] {
-    width: 100%;
-    height: 60px;
-    border: 3px solid #E5AD45;
-    border-radius: 35px;
-    padding: 0 20px;
-    font-size: 1rem;
-    font-family: "SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    outline: none;
-    transition: .3s;
+  width: 100%;
+  height: 60px;
+  border: 3px solid #E5AD45;
+  border-radius: 35px;
+  padding: 0 20px;
+  font-size: 1rem;
+  font-family: "SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  outline: none;
+  transition: .3s;
 }
 
 .form-card input[type=text]:focus,
 .form-card input[type=email]:focus {
-    border-color: #2B3A67;
+  border-color: #2B3A67;
 }
 
 .pix {
-    text-align: right;
-    margin-top: 18px;
+  text-align: right;
+  margin-top: 18px;
 }
 
 .pix a {
-    font-family: "SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    color: #2B3A67;
-    font-weight: 700;
-    text-decoration: underline;
-    transition: .3s;
+  font-family: "SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #2B3A67;
+  font-weight: 700;
+  text-decoration: underline;
+  transition: .3s;
 }
 
 .pix a:hover {
-    color: #E5AD45;
+  color: #E5AD45;
 }
 
 .arquivo {
-    margin-top: 12px;
-    font-family: "SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    color: #2B3A67;
+  margin-top: 12px;
+  font-family: "SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #2B3A67;
 }
 
 .buttons {
-    margin-top: 45px;
-    display: flex;
-    justify-content: center;
-    gap: 40px;
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
 }
 
 .btn-yellow,
 .btn-blue {
-    font-family:'Merriweather', serif;
-    width: 250px;
-    height: 65px;
-    border: none;
-    padding: 10px 30px;
-    border-radius: 50px;
-    cursor: pointer;
-    font-size: 1.5rem;
-    font-weight:  700;
-    text-decoration: none;
-    transition: .3s;
-    outline-offset: -6px;
+  font-family: 'Merriweather', serif;
+  width: 250px;
+  height: 65px;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: .3s;
+  outline-offset: -6px;
 }
+
 .btn-yellow {
-    background: #E5AD45;
-    color: #6B90A6;
-    outline: 2px solid #C49234;
+  background: #E5AD45;
+  color: #6B90A6;
+  outline: 2px solid #C49234;
 }
 
-.btn-yellow:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 18px rgba(0, 0, 0, .20);
+.btn-yellow:hover,
+.btn-yellow:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, .20);
 }
+
 .btn-blue {
-    background: #6B90A6;
-    color: #E5AD45;
-    outline: 2px solid #4f7890;
+  background: #6B90A6;
+  color: #E5AD45;
+  outline: 2px solid #4f7890;
 }
 
-.btn-blue:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 18px rgba(0, 0, 0, .20);
+.btn-blue:hover,
+.btn-blue:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, .20);
 }
 
 .success-box {
-    max-width: 900px;
-    margin: auto;
-    text-align: center;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
 }
 
 .success-box h1 {
-    font-family: 'Merriweather', serif;
-    color: #E5AD45;
-    font-size: 4.5rem;
-    margin-bottom: 20px;
-
+  font-family: 'Merriweather', serif;
+  color: #E5AD45;
+  font-size: 4.5rem;
+  margin-bottom: 20px;
 }
 
 .success-box img {
-    width: 480px;
-    max-width: 100%;
-    margin: 30px auto;
-    display: block;
+  width: 480px;
+  max-width: 100%;
+  margin: 30px auto;
+  display: block;
 }
 
 .success-box h2 {
-    font-family: 'Merriweather', serif;
-    color: #2B3A67;
-    font-size: 2rem;
-    margin-bottom: 20px;
+  font-family: 'Merriweather', serif;
+  color: #2B3A67;
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
 .success-box p {
-    font-family: "SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    color: #2B3A67;
-    font-size: 1.2rem;
-    line-height: 1.7;
-    max-width: 900px;
-    margin: auto auto 40px;
+  font-family: "SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #2B3A67;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  max-width: 900px;
+  margin: auto auto 40px;
 }
 
+@media (max-width: 900px) {
+  .banner-content h1 {
+    font-size: 2.8rem;
+  }
 
-@media(max-width:900px) {
+  .banner-content p {
+    font-size: 1.4rem;
+  }
 
-    .banner-content h1 {
-        font-size: 2.8rem;
-    }
+  .form-card {
+    padding: 35px;
+  }
 
-    .banner-content p {
-        font-size: 1.4rem;
-    }
-
-    .form-card {
-        padding: 35px;
-    }
-
-    .buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-@media(max-width:600px) {
+@media (max-width: 600px) {
+  .banner-doacao {
+    height: 220px;
+  }
 
-    .banner-doacao {
-        height: 220px;
-    }
+  .banner-content h1 {
+    font-size: 2rem;
+  }
 
-    .banner-content h1 {
-        font-size: 2rem;
-    }
+  .banner-content p {
+    font-size: 1.1rem;
+  }
 
-    .banner-content p {
-        font-size: 1.1rem;
-    }
+  .form-card {
+    border-width: 5px;
+    border-radius: 30px;
+    padding: 25px;
+  }
 
-    .form-card {
-        border-width: 5px;
-        border-radius: 30px;
-        padding: 25px;
+  .form-card h2 {
+    font-size: 2rem;
+  }
 
-    }
+  .form-card h3 {
+    font-size: 1.5rem;
+  }
 
-    .form-card h2 {
-        font-size: 2rem;
-    }
+  .form-card label {
+    font-size: 1.1rem;
+  }
 
-    .form-card h3 {
-        font-size: 1.5rem;
-    }
+  .btn-yellow,
+  .btn-blue {
+    width: 220px;
+    font-size: 1.15rem;
+  }
 
-    .form-card label {
-        font-size: 1.1rem;
-    }
-
-    .btn-yellow,
-    .btn-blue {
-        width: 220px;
-        font-size: 1.15rem;
-    }
-
-    .success-box h1 {
-        font-size: 2.7rem;
-    }
+  .success-box h1 {
+    font-size: 2.7rem;
+  }
 }
