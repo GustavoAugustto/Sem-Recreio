@@ -48,5 +48,5 @@ if (voltarPagina) {
 }
 
 inicioButton.addEventListener("click", () => {
-    window.location.href = "./inicio.html";
+    window.location.href = "Sem Recreio/index.html";
 });
