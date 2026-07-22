@@ -129,8 +129,8 @@ body {
 }
 
 .urso img {
+
   width: 500px;
-  max-width: 38vw;
   display: block;
 }
 
@@ -167,7 +167,9 @@ body {
   margin-bottom: 45px;
 }
 
+
 .btn {
+  text-align: center;
   width: 230px;
   height: 65px;
   display: flex;
